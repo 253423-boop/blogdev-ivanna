@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BlogDev personal de Ivanna, estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital, donde comparte aprendizajes, proyectos y experiencias en desarrollo de software.">
+  <meta name="robots" content="index, follow">
+  <!-- Añade aquí el dominio definitivo: <link rel="canonical" href="https://tu-dominio.com/"> -->
+  <meta property="og:title" content="Ivanna | BlogDev de Ingeniería y Desarrollo de Software">
+  <meta property="og:description" content="BlogDev personal de Ivanna, estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital, donde comparte aprendizajes, proyectos y experiencias en desarrollo de software.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/ivanna.jpeg">
+  <!-- Añade aquí la URL absoluta definitiva: <meta property="og:url" content="https://tu-dominio.com/"> -->
+  <title>Ivanna | BlogDev de Ingeniería y Desarrollo de Software</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Ivanna, ir al inicio">IVANNA<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú de navegación" aria-controls="site-navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#vlog">Vlog de hoy</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+        <div class="hero__content">
+          <h1 id="hero-title">Hola, <em>soy Ivanna.</em></h1>
+          <p>Soy estudiante de cuarto cuatrimestre de Ingeniería en Tecnologías de la Información e Innovación Digital.</p>
+          <p>Este es mi diario digital, un espacio donde comparto lo que voy aprendiendo en la universidad, los proyectos en los que trabajo y mi experiencia durante la carrera.</p>
+          <a class="button-link" href="#vlog">Ver vlog de hoy <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="hero__media">
+          <img src="img/ivanna.jpeg" width="1176" height="882" alt="Ivanna, estudiante de Ingeniería en Tecnologías de la Información e Innovación Digital" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="vlog-featured" id="vlog" aria-labelledby="vlog-title">
+      <div class="vlog-featured__inner container">
+        <figure class="vlog-featured__media">
+          <img src="img/jetpack-compose.webp" width="1200" height="1200" alt="Computadora portátil mostrando código durante una sesión de desarrollo" loading="lazy">
+        </figure>
+        <article class="vlog-featured__content">
+          <p class="eyebrow">Vlog de hoy</p>
+          <p class="metadata"><time datetime="2026-09-13">13 de septiembre de 2026</time><span aria-hidden="true">|</span> Aplicaciones Móviles</p>
+          <h2 id="vlog-title">Hoy por fin entendí Jetpack Compose.</h2>
+          <p>En la clase de Aplicaciones Móviles vimos los fundamentos de Jetpack Compose. Entendí mejor cómo funcionan los composables, la recomposición y el manejo de estado. También practicamos con un pequeño proyecto en Android Studio.</p>
+          <a class="text-link" href="blog/jetpack-compose.html">Leer vlog completo <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact__inner container">
+        <div class="contact__intro">
+          <h2 id="contact-title">Conectemos.</h2>
+          <p>Si quieres conocer más sobre mis proyectos, experiencia académica o trabajo en desarrollo de software, puedes encontrarme aquí.</p>
+        </div>
+        <address class="contact-links">
+          <!-- Sustituye los valores # por las URLs y dirección de correo reales. -->
+          <a href="https://github.com/253423-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub: ver mis proyectos (URL pendiente)"><span><strong>GitHub</strong>Ver mis proyectos</span><b aria-hidden="true">→</b></a>
+          <a href="https://www.linkedin.com/in/ivanna-mu%C3%B1oz-hernandez-20373789/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: perfil profesional (URL pendiente)"><span><strong>LinkedIn</strong>Perfil profesional</span><b aria-hidden="true">→</b></a>
+          <a href="mailto:253423@it2id.upchiapas.edu.mx" aria-label="Email: escríbeme (reemplazar correo de ejemplo)"><span><strong>Email</strong>Escríbeme</span><b aria-hidden="true">→</b></a>
+        </address>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
