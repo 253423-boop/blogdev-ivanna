@@ -107,7 +107,7 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-.hero { padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(4.5rem, 8vw, 7rem); }
+.hero { padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(2.5rem, 3.5vw, 3rem); }
 
 .hero__inner { display: grid; align-items: center; gap: clamp(2.25rem, 7vw, 6.5rem); }
 .hero__content { max-width: 42rem; }
@@ -187,13 +187,21 @@ h1, h2, h3 {
 
 .text-link:hover { border-color: var(--charcoal); color: var(--clay-dark); }
 
-.about { padding-block: var(--section-space); }
+.about {
+  padding-top: var(--section-space);
+  padding-bottom: clamp(2.5rem, 3.5vw, 3rem);
+}
 .about__inner { max-width: 48rem; }
 .about h2 { margin: 0; }
 .about__inner > p:last-child { max-width: 40rem; margin: 1.4rem 0 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
 
 .contact { padding-block: var(--section-space); background: #f5f1ed; }
-.contact__inner { display: grid; gap: 2.75rem; }
+.contact__inner {
+  display: grid;
+  width: min(100% - (var(--page-gutter) * 2), var(--content-width));
+  margin-inline: auto;
+  gap: 2.75rem;
+}
 .contact__intro { max-width: 34rem; }
 .contact__intro > p:last-child { margin: 1.4rem 0 0; color: #4d4948; }
 
