@@ -191,9 +191,9 @@ h1, h2, h3 {
   padding-top: var(--section-space);
   padding-bottom: clamp(2.5rem, 3.5vw, 3rem);
 }
-.about__inner { max-width: 48rem; }
+.about__inner { max-width: 48rem; text-align: center; }
 .about h2 { margin: 0; }
-.about__inner > p:last-child { max-width: 40rem; margin: 1.4rem 0 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
+.about__inner > p:last-child { max-width: 44rem; margin: 1.4rem auto 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
 
 .contact { padding-block: var(--section-space); background: #f5f1ed; }
 .contact__inner {
