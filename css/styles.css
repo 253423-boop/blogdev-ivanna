@@ -257,6 +257,19 @@ h1, h2, h3 {
   .contact-links a:hover { padding-inline: 1rem; transform: translateY(-0.15rem); }
 }
 
+/* Instructor test viewport: 720px wide by 1600px high, with normal document scrolling. */
+@media (min-width: 43rem) and (max-width: 720px) {
+  :root { --page-gutter: 2rem; }
+
+  .site-header__inner { min-height: 5rem; }
+  .hero { padding-block: 3rem; }
+  .hero__inner, .entry-preview { gap: 3rem; }
+  .hero__media { max-width: 38rem; margin-inline: auto; }
+  .entry-preview__media { max-width: 34rem; margin-inline: auto; }
+  .contact__inner { gap: 3rem; }
+  .site-footer { padding-block: 1.75rem; }
+}
+
 @media (max-width: 47.99rem) {
   .menu-toggle { display: block; }
   .site-header:not(.site-header--menu-ready) .site-header__inner { flex-wrap: wrap; padding-block: 0.5rem; }
