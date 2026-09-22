@@ -15,4 +15,4 @@ Las imágenes están en `img/`. Sustituye `ivanna.jpeg` y `jetpack-compose.webp`
 
 ## Dominio
 
-Antes de publicar, sustituye `https://tu-dominio.com/` en `sitemap.xml` y descomenta/completa las etiquetas canonical y `og:url` indicadas en cada HTML. Actualiza también el comentario `Sitemap` de `robots.txt` con la URL final.
+El sitio está publicado en `https://253423-boop.github.io/blogdev-ivanna/`. Si se configura un dominio propio en el futuro, actualiza los valores canonical y `og:url` de cada HTML, las URL de `sitemap.xml` y la línea `Sitemap` de `robots.txt`.

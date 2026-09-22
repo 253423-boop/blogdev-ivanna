@@ -1,5 +1,4 @@
-# Sustituye la URL de ejemplo por el dominio definitivo al publicar.
 User-agent: *
 Allow: /
 
-# Sitemap: https://tu-dominio.com/sitemap.xml
+Sitemap: https://253423-boop.github.io/blogdev-ivanna/sitemap.xml
