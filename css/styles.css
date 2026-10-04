@@ -247,7 +247,7 @@ h1, h2, h3 {
 }
 
 .contact-links a:hover { padding-inline: 0.55rem; background: var(--blush); color: var(--clay-dark); }
-.contact-links span { display: grid; gap: 0.08rem; }
+.contact-links span { display: grid; min-width: 0; gap: 0.08rem; overflow-wrap: anywhere; }
 .contact-links strong { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .contact-links span { color: var(--muted); font-size: 0.9rem; }
 .contact-links strong { color: var(--charcoal); }
@@ -304,6 +304,8 @@ h1, h2, h3 {
 }
 
 @media (max-width: 47.99rem) {
+  :root { --section-space: clamp(3.5rem, 12vw, 4.5rem); }
+
   .menu-toggle { display: block; }
   .site-header:not(.site-header--menu-ready) .site-header__inner { flex-wrap: wrap; padding-block: 0.5rem; }
   .site-header:not(.site-header--menu-ready) .site-nav { justify-content: space-between; width: 100%; gap: 0.5rem; }
