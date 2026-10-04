@@ -306,6 +306,13 @@ h1, h2, h3 {
 @media (max-width: 47.99rem) {
   :root { --section-space: clamp(3.5rem, 12vw, 4.5rem); }
 
+  .hero h1 { font-size: clamp(2.6rem, 10vw, 2.7rem); }
+  .button-link { min-height: 3.25rem; padding: 0.65rem 1rem; }
+  .entry-preview__media img { aspect-ratio: 4 / 3; }
+  .development__areas { gap: 1.75rem; }
+  .development__area { padding-top: 1rem; }
+  .development__area p { margin-top: 0.7rem; }
+
   .menu-toggle { display: block; }
   .site-header:not(.site-header--menu-ready) .site-header__inner { flex-wrap: wrap; padding-block: 0.5rem; }
   .site-header:not(.site-header--menu-ready) .site-nav { justify-content: space-between; width: 100%; gap: 0.5rem; }
@@ -328,7 +335,7 @@ h1, h2, h3 {
 }
 
 @media (max-width: 22.5rem) {
-  .hero h1 { font-size: clamp(1.9rem, 10vw, 3rem); letter-spacing: -0.075em; }
+  .hero h1 { font-size: clamp(1.75rem, 9vw, 2.7rem); letter-spacing: -0.075em; }
   .post h1 { font-size: clamp(2rem, 10vw, 3rem); }
 }
 
