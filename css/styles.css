@@ -198,13 +198,13 @@ h1, h2, h3 {
   padding-bottom: clamp(2.5rem, 3.5vw, 3rem);
 }
 .development__intro { max-width: 48rem; }
-.development h2 { margin: 0; font-size: clamp(2.65rem, 5.1vw, 4.15rem); }
+.development h2 { margin: 0; font-size: clamp(2.35rem, 4.5vw, 4.15rem); }
 .development__intro > p:last-child { max-width: 44rem; margin: 1.4rem 0 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
 
 .development__areas {
   display: grid;
   gap: 2rem;
-  margin-top: clamp(2.75rem, 6vw, 5rem);
+  margin-top: clamp(2.1rem, 4.5vw, 3.75rem);
 }
 
 .development__area { padding-top: 1.25rem; border-top: 1px solid var(--line); }
