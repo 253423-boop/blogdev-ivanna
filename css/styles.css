@@ -187,13 +187,24 @@ h1, h2, h3 {
 
 .text-link:hover { border-color: var(--charcoal); color: var(--clay-dark); }
 
-.about {
+.development {
   padding-top: var(--section-space);
   padding-bottom: clamp(2.5rem, 3.5vw, 3rem);
 }
-.about__inner { max-width: 48rem; text-align: center; }
-.about h2 { margin: 0; }
-.about__inner > p:last-child { max-width: 44rem; margin: 1.4rem auto 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
+.development__intro { max-width: 48rem; }
+.development h2 { margin: 0; font-size: clamp(2.65rem, 5.1vw, 4.15rem); }
+.development__intro > p:last-child { max-width: 44rem; margin: 1.4rem 0 0; color: #4d4948; font-size: clamp(1.05rem, 1.5vw, 1.22rem); }
+
+.development__areas {
+  display: grid;
+  gap: 2rem;
+  margin-top: clamp(2.75rem, 6vw, 5rem);
+}
+
+.development__area { padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.development__area h3 { font-size: clamp(1.65rem, 2.6vw, 2.2rem); }
+.development__area p { margin: 0.85rem 0 0; color: #4d4948; }
+.development__area p:last-child { color: var(--muted); font-size: 0.88rem; }
 
 .contact { padding-block: var(--section-space); background: #f5f1ed; }
 .contact__inner {
@@ -250,6 +261,7 @@ h1, h2, h3 {
 @media (min-width: 48rem) {
   .hero__inner { grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr); }
   .entry-preview { grid-template-columns: minmax(18rem, 0.88fr) minmax(0, 1.12fr); }
+  .development__areas { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(2rem, 4vw, 4rem); }
   .contact__inner { grid-template-columns: minmax(0, 0.9fr) minmax(24rem, 1.1fr); column-gap: clamp(3rem, 8vw, 7rem); align-items: end; }
   .contact-links { grid-template-columns: repeat(3, 1fr); }
   .contact-links a { min-height: 7rem; padding: 0.8rem 1rem; border-right: 1px solid var(--line); }
